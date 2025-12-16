@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Un regalo para recordar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f7f5f2;
+      --card: #ffffff;
+      --primary: #1f4f4a;
+      --accent: #c9a66b;
+      --text: #2b2b2b;
+      --muted: #7a7a7a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    .container {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 18px;
+    }
+    .card {
+      width: 100%;
+      max-width: 420px;
+      background: var(--card);
+      border-radius: 32px;
+      overflow: hidden;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+    }
+    .hero {
+      position: relative;
+      padding: 44px 26px 36px;
+      background: linear-gradient(160deg, #214f4b, #3a7f78);
+      color: #fff;
+      text-align: center;
+    }
+    
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.1rem;
+      margin: 0 0 10px;
+    }
+    .hero p {
+      margin: 0;
+      font-size: 1.05rem;
+      opacity: 0.95;
+    }
+    .emoji {
+      font-size: 2.6rem;
+      margin-bottom: 8px;
+    }
+    .content {
+      padding: 30px 24px 34px;
+      text-align: center;
+    }
+    .content p {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin: 14px 0;
+    }
+    .trip-for {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      margin: 18px 0 6px;
+      color: var(--primary);
+    }
+    .date-box {
+      margin: 22px 0;
+      padding: 18px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #f3efe8, #ffffff);
+      border: 1px solid #ece6dc;
+      font-weight: 500;
+    }
+    .hotel {
+      margin-top: 30px;
+    }
+    .hotel h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    .hotel p {
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+    .gallery {
+      margin-top: 16px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 18px;
+    }
+    .signature {
+      margin-top: 34px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+      font-size: 1rem;
+      color: var(--muted);
+    }
+    .signature strong {
+      display: block;
+      margin-top: 6px;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      color: var(--primary);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="hero">
+        <div class="emoji">🎁</div>
+        <h1>Una pequeña gran sorpresa</h1>
+        <p>Porque hay regalos que no se envuelven</p>
+      </div>
+
+      <div class="content">
+        
+        <div class="trip-for">Un viaje para mamá y Joseba</div>
+
+        <div class="date-box">
+          📅 Del <strong>28 de enero</strong> al <strong>1 de febrero</strong>
+        </div>
+
+        <p>Un fin de semana para parar, respirar y disfrutar del tiempo juntos.
+        Un regalo pensado para crear recuerdos y saborearlos sin prisas.</p>
+
+        <div class="hotel">
+          <h2>Hotel Bizipoz</h2>
+          <p>Un espacio acogedor, cuidado al detalle y perfecto para desconectar.</p>
+          <p><a href="https://es.bizipoz.com" target="_blank" style="color:#1f4f4a;font-weight:500;text-decoration:none;">Visitar la web del hotel →</a></p>
+
+          <div class="gallery">
+            <img src="https://cdn.prod.website-files.com/6647f1bfe561bf414f86f198/68024a1c5b410bab58068443_740560%20HOME%202.webp" alt="Hotel Bizipoz exterior">
+            <img src="https://cdn.prod.website-files.com/6647dca99a8d53acbb6fd49f/665f7e105d2faee99f419511_opengraph.jpg" alt="Hotel Bizipoz interior">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/686026930.jpg?k=befe5d197cec61bb0dc41cc42bad269227a66162d576bc85cc0b91a129c0f5e5&o=" alt="Habitación Hotel Bizipoz">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/57/db/d0/caption.jpg?w=900&h=-1&s=1" alt="Detalle Hotel Bizipoz">
+          </div>
+        </div>
+
+        <div class="signature">
+          Con todo nuestro cariño
+          <strong>Oier y Aizane ❤️</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
